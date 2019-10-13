@@ -1,0 +1,92 @@
+<style type="text/css">
+*{
+	padding:0;
+	margin:0;
+}
+#head{
+	width:1033px;
+	margin:0 auto;
+	font-size:0;
+}
+#marquee{
+	width:1033px;
+	margin:0 auto;
+	color:#FFF;
+	font-size:28px;
+	height: 50px;
+}
+#nav{
+	width:1033px;
+	margin:0 auto;
+	font-size:0;
+	}
+#foot{
+	width:1033px;
+	margin:0 auto;
+	font-size:0;
+	background-color: black;
+	}
+#iframe{
+	width:1033px;
+	margin:0 auto;
+}
+iframe{
+	width:1033px;
+	height: 800px;
+	background-color: white;
+}
+marquee{
+	width: 1033px;
+	height: 50px;
+	line-height: 50px;
+	background: black;
+}
+a{
+	width:20%;
+	height:50px;
+	display:inline-block;
+	font-size:24px;
+	color:#000;
+	background-color:#fff;
+	text-align:center;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+	line-height:50px;
+	}
+.one{
+	width:20%;
+	height:50px;
+	display:inline-block;
+	font-size:24px;
+	color:#fff;
+	background-color:#000;
+	text-align:center;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
+	line-height:50px;
+	border-bottom: 1px solid #fff;
+}
+a:link {
+	text-decoration: none;
+
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	background-color:#666;
+	color:#FFF;
+	border-top: 1px solid #0f0;
+}
+a:active {
+	text-decoration: none;
+}
+
+p{
+	font-family: "华文新魏";
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}
+</style>
