@@ -7,36 +7,48 @@
 
 </head>
 <body bgcolor="#333333">
-<div id="head">
-	<img src="图片文件夹/特仑苏logo.jpg" alt="logo" name="logo" width="160" height="90" id="logo" style="background-color: #FF0000" />
-    <img name="" src="图片文件夹/banner.gif" width="873" height="90" style="background-color: #00FFFF" />
-</div>
+<header>
+	<div id="header">
+		<img src="图片文件夹/特仑苏logo.jpg" alt="logo" name="logo" width="160" height="90" id="logo" style="float: left;" />
+		<img name="" src="图片文件夹/banner.gif" width="873" height="90" style="background-color: #00FFFF" />
+	</div>
+</header>
+
 
 <div id="marquee">
 	<marquee direction="right" scrollamount="3"><b>欢迎光临</b></marquee>
 </div>
 
-<div id="nav">
-<a href="首页.html" target="mainkj" >首页</a>
-<a href="相关文章.html" target="mainkj">相关文章</a>
-<a href="#">学习资料</a>
-<a href="#">图片展</a>
-    <a href="#">我的作品</a>
-</div>
+
+<nav>	
+	<div class="navwrap">
+		<ul>
+			<li><a class="nav" href="首页.html" target="mainkj" >首页</a></li>
+			<li><a class="nav" href="相关文章.html" target="mainkj">相关文章</a></li>
+			<li><a class="nav" href="#">学习资料</a></li>
+			<li><a class="nav" href="#">个人相册</a></li>
+			<li><a class="nav" href="#">我的作品</a></li>
+		</ul>
+	</div>
+</nav>
+
 
 <div id="iframe">
-<iframe src="首页.html" name="mainkj"  marginwidth="0"  marginheight="0" align="middle" scrolling="no" frameborder="0"></iframe>
+	<iframe src="首页.html" name="mainkj"  marginwidth="0"  marginheight="0" align="middle" scrolling="no" frameborder="0"></iframe>
 </div>
 
-
-<div id="foot">
-  <a class="one" href="#">关于</a>
-  <a class="one" href="#">学习</a>
-  <a class="one" href="#">文章</a>
-  <a class="one" href="#">网站地图</a>
-  <a class="one" href="#">站长统计</a>
-  <p>联系方式QQ-Mmail: 1056594907@qq.com</p>
-</div>
-
+<footer>
+	<div id="footer">
+		<a href="#">关于</a>
+		<a href="#">学习</a>
+		<a href="#">文章</a>
+		<a href="#">网站地图</a>
+		<a href="#">站长统计</a><br />
+	</div>
+	<hr>
+	<address>
+		联系方式QQ-Mmail: 1056594907@qq.com
+	</address>
+</footer>
 </body>
 </html>
