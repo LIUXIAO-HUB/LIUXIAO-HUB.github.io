@@ -1,54 +1,80 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>来了！老弟！！</title>
-<link rel="stylesheet" type="text/css" href="css/index-style.css">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>来了！老弟！！</title>
+		<link rel="stylesheet" type="text/css" href="css/index-style.css">
+		<style type="text/css">
+			body {
+				background-image: url("图片文件夹/bg.jpeg");
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function (){
+				var oNav=document.getElementById('nav');
+				var aLi=oNav.getElementsByTagName('li');
+				aLi[0].className='aonclick';
+				for(var i=0;i<aLi.length;i++)
+				{
+					aLi[i].onclick=function ()
+					{
+						for(var i=0;i<aLi.length;i++)
+						{
+							aLi[i].className='';
+						}
+						this.className='aonclick';
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<div id="nav">
+				<nav>
+					<ul>
+						<li><a href="首页.html" target="mainkj">首页</a></li>
+						<li><a href="相关文章.html" target="mainkj">相关文章</a>
+							<ul>
+								<li><a href="西安古城.html" target="mainkj">古城西安</a></li>
+								<li><a href="上古神兽.html" target="mainkj">上古神兽</a></li>
+								<li><a href="二十四节气.html" target="mainkj">二十四节气</a></li>
+								<li><a href="中国物联网激荡20年.html" target="mainkj">物联网激荡20年</a></li>
+							</ul>
+						</li>
+						<li><a href="#">学习资料</a></li>
+						<li><a href="个人相册.html" target="mainkj">个人相册</a></li>
+						<li><a href="#">我的作品</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-</head>
-<body bgcolor="#333333">
-<header>
-	<div id="header">
-		<img src="图片文件夹/特仑苏logo.jpg" alt="logo" name="logo" width="160" height="90" id="logo" style="float: left;" />
-		<img name="" src="图片文件夹/banner.gif" width="873" height="90" style="background-color: #00FFFF" />
-	</div>
-</header>
+		<div id="marquee">
+			<marquee direction="right" scrollamount="3"><b>欢迎光临</b></marquee>
+		</div>
 
+		<div id="iframe">
+			<iframe src="首页.html" name="mainkj" marginwidth="0" marginheight="0" align="middle" scrolling="auto" frameborder="0"></iframe>
+		</div>
 
-<div id="marquee">
-	<marquee direction="right" scrollamount="3"><b>欢迎光临</b></marquee>
-</div>
-
-
-<nav>	
-	<div class="navwrap">
-		<ul>
-			<li><a href="首页.html" target="mainkj" >首页</a></li>
-			<li><a href="相关文章.html" target="mainkj">相关文章</a></li>
-			<li><a href="#">学习资料</a></li>
-			<li><a href="个人相册.html" target="mainkj">个人相册</a></li>
-			<li><a href="#">我的作品</a></li>
-		</ul>
-	</div>
-</nav>
-
-
-<div id="iframe">
-	<iframe src="首页.html" name="mainkj"  marginwidth="0"  marginheight="0" align="middle" scrolling="auto" frameborder="0"></iframe>
-</div>
-
-<footer>
-	<div id="footer">
-		<a href="#">关于</a>
-		<a href="#">学习</a>
-		<a href="#">文章</a>
-		<a href="#">网站地图</a>
-		<a href="#">站长统计</a><br />
-	</div>
-	<hr>
-	<address>
-		联系方式QQ-Mmail: 1056594907@qq.com
-	</address>
-</footer>
-</body>
+		<footer>
+			<div id="footer">
+				<a href="#">关于</a>
+				<a href="#">学习</a>
+				<a href="#">文章</a>
+				<a href="#">网站地图</a>
+				<a href="#">站长统计</a><br />
+			</div>
+			<div id="address">
+				<address>
+					联系方式QQ-Mmail: 1056594907@qq.com
+				</address>
+			</div>
+		</footer>
+	</body>
 </html>
