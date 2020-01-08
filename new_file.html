@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>无标题文档</title>
+		<style type="text/css"> 
+			/* * {
+				margin: 0px;
+				padding: 0px;
+			}
+
+			#menu {
+				background-color: #eee;
+				width: 600px;
+				height: 40px;
+				margin: 0 auto;
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			ul li {
+				line-height: 40px;
+				text-align: center;
+				position: relative;
+				float: left;
+			}
+
+			a {
+				text-decoration: none;
+				color: #000;
+				display: block;
+				width: 90px;
+			}
+
+			a:hover {
+				color: #FFF;
+				background-color: #666;
+			}
+
+			ul li ul li {
+				float: none;
+				margin-top: 2px;
+				background-color: #eee;
+			}
+
+			ul li ul {
+				width: 90px;
+				position: absolute;
+				display: block;
+			}
+
+			ul li:hover ul {
+				display: block; 
+			}*/
+			#clock{
+				width: 900px;
+				background-color: #000000;
+				color: #FFFFFF;
+				font-size: 60px;
+				text-align: center;
+			}
+			body{
+				background-image: url("图片文件夹/bg.jpeg");
+				background-repeat: repeat;
+			}
+		</style>
+		<script type="text/javascript">
+			var welcomeDate = new Date();
+			var welcomeHours = welcomeDate.getHours();
+			var welcomeGreetings = '';
+			if(welcomeHours < 12){
+				welcomeGreetings = '上午好，';
+			}else if(welcomeHours < 14){
+				welcomeGreetings = '中午好，';
+			}else if(welcomeHours < 18){
+				welcomeGreetings = '下午好，';
+			}else{
+				welcomeGreetings = '晚上好，';
+			}
+			var promptNum = 3;
+			while(1){
+					while(1){
+						if(promptNum==0){
+							alert('验证机会已用光，陌生人，请离开！！')
+						}else{
+							break;
+						}	
+					}
+					
+					var userName = prompt('谁？报上名来！！！');
+					 if (userName=='刘萧') {
+						alert(welcomeGreetings+userName+'，欢迎回来！！');
+						break;
+					} else{
+						promptNum--;
+						alert('输入错误,请重新输入！(还剩'+promptNum+'次机会！)');
+						continue;
+					}
+					
+			}
+			function todu(n){
+				return n<10?'0'+n:''+n;
+			}
+			window.onload=function (){
+				var oClock=document.getElementById('clock');
+				var aImg=oClock.getElementsByTagName('img');
+				function Clock(){
+					var oData=new Date();
+					var str=todu(oData.getFullYear()) + todu(oData.getMonth() + 1) + todu(oData.getDate()) + todu(oData.getHours()) + todu(oData.getMinutes()) + todu(oData.getSeconds());
+					for(var i=0;i<aImg.length;i++)
+					{
+						aImg[i].src='图片文件夹/'+str[i]+'.png';
+					}
+				}
+				setInterval(Clock, 1000);
+				Clock();	
+			}
+		</script>
+	</head>
+	
+
+	<body>
+		<!-- <div id="menu">
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">课程大厅</a>
+					<ul>
+						<li><a href="#">Javascrip</a>
+						<li><a href="#">Jquery</a>
+					</ul>
+				</li>
+				<li><a href="#">学习中心</a>
+					<ul>
+						<li><a href="#">视频学习</a></li>
+						<li><a href="#">案例学习</a></li>
+						<li><a href="#">交流平台</a></li>
+					</ul>
+				</li>
+				<li><a href="#">经典案例</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+		</div> -->
+		<div id="clock">
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+			.
+			<img src="" alt="">
+			<img src="" alt="">
+			.
+			<img src="" alt="">
+			<img src="" alt="">
+			.
+			<img src="" alt="">
+			<img src="" alt="">
+			:
+			<img src="" alt="">
+			<img src="" alt="">
+			:
+			<img src="" alt="">
+			<img src="" alt="">
+		</div>
+	</body>
+</html>

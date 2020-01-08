@@ -1,0 +1,23 @@
+<style type="text/css">
+p{
+	text-align:justify;
+	text-indent:2em;
+}
+
+body,td,th {
+	font-family: "华文楷体";
+	font-size: 20px;
+}
+
+h1{
+	text-align:center;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+</style>
